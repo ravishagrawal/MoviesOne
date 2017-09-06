@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MoviesOne</string>
+    <string name="sample_movie_title">Movies One</string>
+    <string name="sample_release_date">27/12/2017</string>
+    <string name="sample_movie_rating">8.2/10</string>
+    <string name="sample_poster_content">This is a poster description</string>
+    <string name="sample_movie_synopsis"> This is a movie which has some synopsis and i of-course cannot write it</string>
+    <string name="parcel_movie_structure">PARCEL_MOVIE_STRUCTURE</string>
+    <string name="secret_key"></string>
+    <string name="error_internet">This application needs Internet connection </string>
+    <string name="sort_method">SORT_METHOD</string>
+    <string name="tmdb_sort_pop_desc">popularity.desc</string>
+    <string name="pref_sort_pop_desc">SORT_POPULARITY_DESC</string>
+    <string name="no_synopsis_found">Movie Synopsis not found </string>
+    <string name="release_date_missing">NA</string>
+    <string name="title_details_activity">Movie Details</string>
+    <string name="pref_sort_ratings_desc">SORT_RATINGS_DESC</string>
+    <string name="tmdb_sort_ratings_desc">ratings.desc</string>
+</resources>
