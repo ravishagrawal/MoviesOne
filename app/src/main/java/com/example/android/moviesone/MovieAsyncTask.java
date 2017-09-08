@@ -131,16 +131,25 @@ public class MovieAsyncTask extends AsyncTask<String, Void, MovieStructure[]> {
 
 
     private URL getApiUrl(String[] parameters) throws MalformedURLException {
-        final String TMDB_BASE_URL = "https://api.themoviedb.org/3/discover/movie?";
+        final String TMDB_BASE_URL_1 = "https://api.themoviedb.org/3/movie/top_rated?";
+        final String TMDB_BASE_URL_2 = "https://api.themoviedb.org/3/movie/popular?";
         final String SORT_BY_PARAM = "sort_by";
         final String API_KEY_PARAM = "api_key";
 
-        Uri builtUri = Uri.parse(TMDB_BASE_URL).buildUpon()
-                .appendQueryParameter(SORT_BY_PARAM, parameters[0])
-                .appendQueryParameter(API_KEY_PARAM, mApiKey)
-                .build();
+        if (SORT_BY_PARAM.equals(parameters[0])) {
 
-        return new URL(builtUri.toString());
+            Uri builtUri = Uri.parse(TMDB_BASE_URL_2).buildUpon()
+                    .appendQueryParameter(API_KEY_PARAM, mApiKey)
+                    .build();
+            return new URL(builtUri.toString());
+
+        }else{
+            Uri builtUri = Uri.parse(TMDB_BASE_URL_1).buildUpon()
+                    .appendQueryParameter(API_KEY_PARAM, mApiKey)
+                    .build();
+            return new URL(builtUri.toString());
+        }
+
     }
 
     @Override

@@ -6,7 +6,7 @@
     <string name="sample_poster_content">This is a poster description</string>
     <string name="sample_movie_synopsis"> This is a movie which has some synopsis and i of-course cannot write it</string>
     <string name="parcel_movie_structure">PARCEL_MOVIE_STRUCTURE</string>
-    <string name="secret_key"></string>
+    <string name="secret_key">8fd058b77a652f58483c54ab48bb01c6</string>
     <string name="error_internet">This application needs Internet connection </string>
     <string name="sort_method">SORT_METHOD</string>
     <string name="tmdb_sort_pop_desc">popularity.desc</string>
