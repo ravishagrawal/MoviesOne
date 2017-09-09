@@ -136,19 +136,22 @@ public class MovieAsyncTask extends AsyncTask<String, Void, MovieStructure[]> {
         final String SORT_BY_PARAM = "sort_by";
         final String API_KEY_PARAM = "api_key";
 
-        if (SORT_BY_PARAM.equals(parameters[0])) {
+
+        if (parameters[0].equals("popularity.desc")) {
 
             Uri builtUri = Uri.parse(TMDB_BASE_URL_2).buildUpon()
                     .appendQueryParameter(API_KEY_PARAM, mApiKey)
                     .build();
             return new URL(builtUri.toString());
 
-        }else{
+        } else{
+
             Uri builtUri = Uri.parse(TMDB_BASE_URL_1).buildUpon()
                     .appendQueryParameter(API_KEY_PARAM, mApiKey)
                     .build();
             return new URL(builtUri.toString());
         }
+
 
     }
 

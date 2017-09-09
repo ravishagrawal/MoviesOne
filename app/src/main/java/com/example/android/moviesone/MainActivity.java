@@ -160,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
             mMenu.findItem(R.string.pref_sort_ratings_desc).setVisible(false);
             mMenu.findItem(R.string.pref_sort_pop_desc).setVisible(true);
         }
+
     }
 
 
